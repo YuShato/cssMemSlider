@@ -10,29 +10,58 @@
 </head>
 
 <body>
-    <main>
+    <div class="main-wrapper">
         <div class="wrapper">
-            <div class="slider-container">
-                <div class="menu">
-                    <label for="slide-dot-1"></label>
-                    <label for="slide-dot-2"></label>
-                    <label for="slide-dot-3"></label>
-                    <label for="slide-dot-4"></label>
+            <input type="radio" name="slide-trigger" value="activator1" id="activator1" checked />
+            <label class="radio" for="activator1">
+            </label>
+            <input type="radio" name="slide-trigger" value="activator2" id="activator2" />
+            <label class="radio" for="activator2">
+            </label>
+            <input type="radio" name="slide-trigger" value="activator3" id="activator3" />
+            <label class="radio" for="activator3">
+            </label>
+            <input type="radio" name="slide-trigger" value="activator4" id="activator4" />
+            <label class="radio" for="activator4">
+
+            </label>
+            <div id="slider">
+                <div id="content">
+                    <div id="activator1-slide" class="slide">
+                        <div></div>
+                    </div>
+                    <div id="activator2-slide" class="slide">
+                        <div></div>
+                    </div>
+                    <div id="activator3-slide" class="slide">
+                        <div></div>
+                    </div>
+                    <div id="activator4-slide" class="slide">
+                        <div></div>
+                    </div>
                 </div>
-
-                <input id="slide-dot-1" type="radio" name="slides" checked>
-                <div class="slide slide-1"></div>
-
-                <input id="slide-dot-2" type="radio" name="slides">
-                <div class="slide slide-2"></div>
-
-                <input id="slide-dot-3" type="radio" name="slides">
-                <div class="slide slide-3"></div>
-                <input id="slide-dot-4" type="radio" name="slides">
-                <div class="slide slide-4"></div>
             </div>
+            <div id="capture-textr">
+                <div id="capture">
+                    <div id="activator1-capture-text" class="capture-text">
+                        <p>Начиналось все вполне неплохо...</p>
+                    </div>
+                    <div id="activator2-capture-text" class="capture-text">
+                        <p>Знакомая история, не правда ли?</p>
+                    </div>
+                    <div id="activator3-capture-text" class="capture-text">
+                        <p>Короче, тут все как обычно...</p>
+                    </div>
+                    <div id="activator4-capture-text" class="capture-text">
+                        <p> Никогда такого не было, и вот опять :)</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </main>
+    </div>
+
 </body>
+
 
 </html>
